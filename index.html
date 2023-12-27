@@ -3,9 +3,121 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Email Template</title>
+    <title>Gmail-Like Email Template</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
   </head>
   <body>
+    <div class="email-container">
+      <header class="email-header">
+        <h1>Gmail</h1>
+      </header>
+      <div class="email-layout">
+        <aside class="email-sidebar">
+          <h2>Categories</h2>
+          <ul>
+            <li>
+              <a href="#" id="inboxLink"><i class="fas fa-inbox"></i> Inbox</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-paper-plane"></i> Sent</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-file"></i> Drafts</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-star"></i> Important</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-star"></i> Starred</a>
+            </li>
+          </ul>
+        </aside>
+        <main class="email-main">
+          <div class="compose-email">
+            <div>
+              <label for="subject"
+                ><i class="fas fa-heading"></i> Subject:</label
+              >
+              <input type="text" id="subject" placeholder="Enter subject" />
+            </div>
+            <div>
+              <label for="from"><i class="fas fa-user"></i> From:</label>
+              <input type="text" id="from" placeholder="Your Email" />
+            </div>
+            <div>
+              <label for="to"><i class="fas fa-at"></i> To:</label>
+              <input type="text" id="to" placeholder="Recipient's Email" />
+            </div>
+            <div>
+              <label for="attachment"
+                ><i class="fas fa-paperclip"></i> Attachment:</label
+              >
+              <input type="file" id="attachment" />
+            </div>
+            <div>
+              <label for="emailBody"
+                ><i class="fas fa-envelope"></i> Email Body:</label
+              >
+              <textarea
+                id="emailBody"
+                placeholder="Write your email here (at least 2000 words)"
+              ></textarea>
+            </div>
+            <button id="sendButton">
+              <i class="fas fa-paper-plane"></i> Send
+            </button>
+          </div>
+
+          <!-- Additional Options -->
+          <div class="additional-options">
+            <hr />
+            <h2><i class="fas fa-cogs"></i> Additional Options</h2>
+            <div>
+              <label for="attachFiles"
+                ><i class="fas fa-paperclip"></i> Attach Files:</label
+              >
+              <input type="file" id="attachFiles" />
+            </div>
+            <div>
+              <label for="insertLink"
+                ><i class="fas fa-link"></i> Insert Link:</label
+              >
+              <input type="text" id="insertLink" placeholder="Enter link" />
+            </div>
+            <div>
+              <label for="insertDriveFile"
+                ><i class="fab fa-google-drive"></i> Insert File from
+                Drive:</label
+              >
+              <input
+                type="text"
+                id="insertDriveFile"
+                placeholder="Enter Google Drive link"
+              />
+            </div>
+            <div>
+              <label for="insertPhoto"
+                ><i class="far fa-image"></i> Insert Photo:</label
+              >
+              <input type="file" id="insertPhoto" />
+            </div>
+            <div>
+              <label for="insertSignature"
+                ><i class="fas fa-signature"></i> Insert Signature:</label
+              >
+              <textarea
+                id="insertSignature"
+                placeholder="Enter your signature"
+              ></textarea>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
     <script src="./scripts/index.js"></script>
   </body>
 </html>
