@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>table</title>
     <style>
+      .container {
+        width: 40%;
+        border: 2px solid black;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        padding: 25px 5px 5px;
+      }
       .ta,
       tr,
       th,
@@ -14,42 +22,47 @@
       }
       .ta2 {
         border: 1px solid red;
-
-        border-spacing: 30px;
+        border-spacing: 10px;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      
+      <div>
+        <h1>Padding</h1>
+
+        <table class="ta">
+          <tr>
+            <th>fname</th>
+            <th>lname</th>
+          </tr>
+          <tr>
+            <td>Aman</td>
+            <td>kumar</td>
+          </tr>
+          <tr>
+            <td>abhishek</td>
+            <td>kumar</td>
+          </tr>
+        </table>
+      </div>
+      <div>
+        <h1>cell Spacing</h1>
+        <table class="ta2">
+          <tr>
+            <th>fname</th>
+            <th>lname</th>
+          </tr>
+          <tr>
+            <td>Aman</td>
+            <td>kumar</td>
+          </tr>
+          <tr>
+            <td>abhishek</td>
+            <td>kumar</td>
+          </tr>
+        </table>
+      </div>
     </div>
-    <table class="ta">
-      <tr>
-        <th>fname</th>
-        <th>lname</th>
-      </tr>
-      <tr>
-        <td>Aman</td>
-        <td>kumar</td>
-      </tr>
-      <tr>
-        <td>abhishek</td>
-        <td>kumar</td>
-      </tr>
-    </table>
-    <table class="ta2">
-      <tr>
-        <th>fname</th>
-        <th>lname</th>
-      </tr>
-      <tr>
-        <td>Aman</td>
-        <td>kumar</td>
-      </tr>
-      <tr>
-        <td>abhishek</td>
-        <td>kumar</td>
-      </tr>
-    </table>
   </body>
 </html>
