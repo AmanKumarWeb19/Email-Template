@@ -1,6 +1,6 @@
 /* styles/index.css */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f8f8f8;
@@ -131,4 +131,8 @@ body {
 .additional-options textarea {
   height: 100px;
   resize: none;
+}
+.gmail {
+  text-decoration: line-through;
+  border: 1px solid red;
 }
